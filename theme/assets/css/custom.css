@@ -1,0 +1,112 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500&display=swap');
+
+.spin{
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+}
+
+
+table .text-reset {
+    display: inline-block;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.dataTables_wrapper .row:first-child, .dataTables_wrapper .row:last-child{
+    padding:15px;
+}
+
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+#drive-exploer-tbl{
+    position: relative;
+}
+
+#drive-exploer-tbl .go-back-bar{
+    position: absolute;
+    top: 102px;
+    width: 100%;
+    background: #fafbfb;
+    padding: 0 15px;
+}
+#drive-exploer-tbl .go-back-bar:hover{
+    background: #f5f5f5;
+}
+
+#drive-exploer-tbl tbody:before{
+    content: "@";
+    display: block;
+    line-height:40px;
+    text-indent: -99999px;
+    /* background: red; */
+}
+
+#drive-exploer-tbl .go-back-bar a{
+    display: block;
+    padding: 8px 0;
+    color: #000;
+}
+#drive-exploer-tbl .go-back-bar a svg{
+    vertical-align: middle;
+}
+
+
+
+#console {
+    background: #000;
+    color: #00ec00;
+    font-family: 'Inconsolata', monospace;
+        padding: 15px;
+        font-weight: 300;
+        font-size: 13px;
+        height: 300px;
+        overflow: hidden;
+        overflow-y: scroll;
+        overflow-anchor: none;
+}
+.anchor {
+    overflow-anchor: auto;
+}
+
+#console p{
+    margin:0;
+}
+
+#console p .pre-symbool{
+    color: #fff !important;
+    font-weight: 200 !important;
+    font-style: italic;
+    margin-right: 3px;
+}
+
+#console [class*="text-"]{
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #drive-exploer-tbl .go-back-bar {
+        top: 134px;
+       
+    }
+  }

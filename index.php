@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * ====================================================================================
+ *                           Google Drive Proxy Player (c) CodySeller
+ * ----------------------------------------------------------------------------------
+ * @copyright This software is exclusively sold at codyseller.com. If you have downloaded this
+ *  from another site or received it from someone else than me, then you are engaged
+ *  in an illegal activity. You must delete this software immediately or buy a proper
+ *  license from https://codyseller.com/license.
+ *
+ *  Thank you for your cooperation and don't hesitate to contact me if anything :)
+ * ====================================================================================
+ *
+ * @author CodySeller (http://codyseller.com)
+ * @link http://codyseller.com
+ * @license http://codyseller.com/license
+ */
+
+
+
+if(!file_exists("includes/config.php")){
+  header("Location: install");
+  exit;
+}
+
+require_once(__DIR__.'/includes/config.php');
+
+$app->run();
