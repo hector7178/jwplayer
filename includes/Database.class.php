@@ -253,7 +253,7 @@ class Database
      * @param string $charset
      * @param string $socket
      */
-    public function __construct($config = NULL,$port = 6107, $charset = 'utf8', $socket = null)
+    public function __construct($config = NULL,$port = NULL, $charset = 'utf8', $socket = null)
     {
         $isSubQuery = false;
 

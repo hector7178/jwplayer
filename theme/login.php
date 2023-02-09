@@ -34,14 +34,16 @@
       <div class="flex-fill d-flex flex-column justify-content-center">
          <div class="container-tight py-6">
             <div class="text-center mb-4">
-               <img src="./static/logo.svg" height="36" alt=""> 
+               <img src="./static/logo.svg" height="36" alt="">
             </div>
             <form class="card card-md" action="<?=$_SERVER['REQUEST_URI']?>" method="post">
                <div class="card-header bg-primary text-light">
                   <h3 class="mb-0 d-block text-center w-100">Admin Login</h3>
                </div>
                <div class="card-body">
-                  
+                  <div class="logo text-center mb-3">
+                     <a href="<?=PROOT?>/login"><img src="<?=PROOT?>/uploads/<?=$this->config['logo']?>" height="50" alt="logo"></a>
+                  </div>
                   <?php $this->displayAlerts(); ?>
                   <div class="mb-3"> 
                      <input type="text" class="form-control" name="username" placeholder="Enter username" autocomplete="off" required>

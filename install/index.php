@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-    $conn = @mysqli_connect($mysql_host, $mysql_username, $mysql_password, $mysql_database);
+    $conn = mysqli_connect($mysql_host, $mysql_username, $mysql_password, $mysql_database);
 
     if($conn){
         mysqli_select_db($conn, $mysql_database);

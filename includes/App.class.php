@@ -325,19 +325,14 @@ class App {
      * @since 1.3
      */
     protected function login() {
-        
-
         if ($this->logged) {
             Helper::redirect('dashboard');
         }
         if (Helper::isPost()) {
             $username = Helper::getReqData('username');
-           
             $password = Helper::getReqData('password');
-           
             $user = new User();
             $user = $user->findByUsername($username);
-
             if (!empty($user)) {
                 if (password_verify($password, $user['password'])) {
                     $_SESSION['user'] = $user['username'];

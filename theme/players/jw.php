@@ -21,9 +21,6 @@
          {
          background-image:url(<?=getThemeURI()?>/static/icons/menu.png)
          };
-         .jw-logo.jw-logo-top-right.jw-reset{
-          display: none;
-        }
       </style>
    </head>
    <body>
@@ -75,9 +72,9 @@
                       }],
                       '.$autoStart.'
                     "logo": {
-                       "file": "#",
+                       "file": "'.$logo.'",
                        "link": "#",
-                       "hide": "true",
+                       "hide": "false",
                        "position": "top-left"
                     },
                     playbackRateControls: true,
@@ -88,11 +85,11 @@
                      },
                      skin: {
                         controlbar: {
-                           "icons": "#fff",
-                           "iconsActive": "#ac39ac"
+                           "icons": "rgba(255,255,255,1.0)",
+                           "iconsActive": "#ff0000"
                         },
                         timeslider: {
-                           "progress": "#b449e6",
+                           "progress": "#ff0000",
                         }
                      },
                     });
@@ -110,7 +107,7 @@
                      //And finally, here we set the unique ID of the button itself.
                      "jw-icon-forward"
                   );';
-                   
+         
          
          
          
