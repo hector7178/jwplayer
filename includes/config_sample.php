@@ -24,7 +24,7 @@ define('FIREWALL', false);
  * If you enbaled firewall, add your allowed domain list here
  * example : ['mydomain.com','movies.com']
  */
-$allowed_domains = ['localhost'];
+$allowed_domains = ['containers-us-west-30.railway.app'];
 
 
 
