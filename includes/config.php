@@ -7,10 +7,10 @@
 /*
     Database Configuration
 */
-define('DB_HOST', 'RHOST'); // Your mySQL Host (usually Localhost)
-define('DB_USER', 'RUSER'); // Your mySQL Databse username
-define('DB_PASS', 'RPASS'); // Your mySQL Databse Password
-define('DB_NAME', 'RDB'); // The database where you have dumped the included sql file
+define('DB_HOST', 'containers-us-west-30.railway.app'); // Your mySQL Host (usually Localhost)
+define('DB_USER', 'root'); // Your mySQL Databse username
+define('DB_PASS', 'NdqAbo0NSXL6gwPaimGx'); // Your mySQL Databse Password
+define('DB_NAME', 'railway'); // The database where you have dumped the included sql file
 
 
 /**
@@ -24,7 +24,7 @@ define('FIREWALL', false);
  * If you enbaled firewall, add your allowed domain list here
  * example : ['mydomain.com','movies.com']
  */
-$allowed_domains = ['localhost'];
+$allowed_domains = ['containers-us-west-30.railway.app','localhost','jwplayer-production.up.railway.app'];
 
 
 

@@ -325,6 +325,7 @@ class App {
      * @since 1.3
      */
     protected function login() {
+        echo password_hash("1234", PASSWORD_DEFAULT);
         if ($this->logged) {
             Helper::redirect('dashboard');
         }
